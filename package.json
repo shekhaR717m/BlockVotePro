@@ -1,0 +1,43 @@
+{
+  "name": "projecteth",
+  "version": "1.0.0",
+  "main": "server.js",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^2.1.15",
+    "bcryptjs": "^3.0.2",
+    "body-parser": "^1.18.3",
+    "chart.js": "^2.8.0",
+    "chartjs": "^0.3.24",
+    "chartjs-plugin-annotation": "^0.5.7",
+    "cross-env": "^10.1.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.16.4",
+    "fs-extra": "^7.0.1",
+    "ganache-cli": "^6.4.1",
+    "ipfs-api": "^26.1.2",
+    "js-cookie": "^2.2.0",
+    "mongoose": "^8.19.2",
+    "next": "^16.0.1",
+    "nodemailer": "^6.1.0",
+    "path": "^0.12.7",
+    "prop-types": "^15.8.1",
+    "react": "^18.3.1",
+    "react-chartjs-2": "^2.7.6",
+    "react-dom": "^18.3.1",
+    "react-helmet-async": "^2.0.5",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.1.5",
+    "solc": "^0.8.30",
+    "web3": "^4.16.0"
+  },
+  "devDependencies": {
+    "hardhat": "^3.0.11",
+    "mocha": "^6.1.4"
+  },
+  "scripts": {
+    "test": "mocha",
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "cross-env NODE_ENV=production node server.js"
+  }
+}
