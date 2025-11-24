@@ -1,15 +1,13 @@
-//Set up mongoose connection
 const mongoose = require('mongoose');
-const mongoDB = 'mongodb://localhost/blockchain_voting';
+
+const mongoDB = process.env.MONGODB_URI || 'mongodb://localhost/blockchain_voting';
 
 const connectDB = async () => {
   try {
-    // Mongoose.connect no longer needs the deprecated options
     await mongoose.connect(mongoDB);
-    console.log('MongoDB connected successfully.');
+    console.log('✅ MongoDB connected successfully.');
   } catch (err) {
-    console.error('MongoDB connection error:', err.message);
-    // Exit process with failure
+    console.error('❌ MongoDB connection error:', err.message);
     process.exit(1);
   }
 };
